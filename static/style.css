@@ -29,6 +29,17 @@ li {
  width: 195px;
  float: left;
 }
+#status, #plan, #expected-completion-date { 
+ float: right;
+ color: #333;
+ border: 1px solid #ccc;
+ background: #F2F2E6;
+ margin: 0px 0px 5px 0px;
+ padding: 10px;
+ height: 350px;
+ width: 678px;
+ display: inline;
+}
 
 }
 #footer { 
