@@ -9,7 +9,7 @@ def index():
 @app.route('/site<num>')
 def site(num):
     # Works for /site01, /site02, /site03, etc.
-    return render_template('site{0}.html'.format(num))
+    return render_template('/templates/site{0}.html'.format(num))
 
 # Include a module runner to allow local testing
 if __name__ == '__main__':
