@@ -9,12 +9,7 @@ def index():
 @app.route('/site<num>')
 def site(num):
     # Works for /site01, /site02, /site03, etc.
-    return redirect(url_for('templates', site{0}.html.format(num))
-
-@app.route('/site01')
-def index():
-    return redirect(url_for('templates', filename='site01.html'))
-
+    return render_template('site{0}.html'.format(num))
 
 
 # Include a module runner to allow local testing
