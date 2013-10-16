@@ -29,7 +29,7 @@ li {
  width: 195px;
  float: left;
 }
-#status, #plan, #expected-completion-date { 
+p { 
  float: right;
  color: #333;
  border: 1px solid #ccc;
