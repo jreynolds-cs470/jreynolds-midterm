@@ -11,6 +11,10 @@ def site(num):
     # Works for /site01, /site02, /site03, etc.
     return render_template('site{0}.html'.format(num))
 
+@app.route('/test')
+def test():
+	return redirect(url_for('template', filename='tournament.html'))
+
 
 # Include a module runner to allow local testing
 if __name__ == '__main__':
