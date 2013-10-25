@@ -15,6 +15,10 @@ def site(num):
 def test():
 	return render_template('tournament.html')
 
+@app.route('/login')
+def test():
+	return render_template('login.html')
+
 
 # Include a module runner to allow local testing
 if __name__ == '__main__':
