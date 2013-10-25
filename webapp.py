@@ -13,7 +13,7 @@ def site(num):
 
 @app.route('/test')
 def test():
-	return redirect(url_for('template', filename='tournament.html'))
+	return render_template('tournament.html')
 
 
 # Include a module runner to allow local testing
